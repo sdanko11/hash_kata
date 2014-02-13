@@ -1,5 +1,3 @@
-require 'pry'
-
 def solution(pairs)
   string = ""
   pairs = pairs.to_a
@@ -13,4 +11,4 @@ def solution(pairs)
   puts string
 end
 
-solution({a: 1, "S" => '2'})
+solution({a: 1, "S" => '2', b: 55})
