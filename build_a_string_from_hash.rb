@@ -1,9 +1,8 @@
 def solution(pairs)
   string = ""
-  pairs = pairs.to_a
-  pairs.each do |pair|
+  pairs.each_with_index do |pair|
     created_string = "#{pair.first.to_s} = #{pair.last}"
-    if pair != pairs.last
+    if pair != pairs.to_a.last
       created_string = created_string + ", "
     end
     string = string + created_string
